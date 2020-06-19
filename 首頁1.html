@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700;900&display=swap" rel="stylesheet">
+    <style type="text/css">
+        * {
+            /*消除網頁邊框*/
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        
+        .header {
+            height: 50px;
+            background-color: rgb(0, 153, 255);
+            position: relative;
+        }
+        
+        .btn {
+            width: 40px;
+            height: 40px;
+            background-color: aquamarine;
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+        
+        .btn span {
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+            display: block;
+            overflow: hidden;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            left: 2px;
+            width: 36px;
+            background-color: bisque;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 0px 0px 0px #aaa, 0px -8px 0px #aaa;
+        }
+        
+        nav {
+            width: 40%;
+            height: 100vh;
+            background-color: #282923;
+            position: absolute;
+            top: 50px;
+            left: -100%;
+        }
+        
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: #a6e22e;
+            padding: 10px 20px;
+            border-bottom: 1px solid #a6e22e;
+        }
+        
+        #menu {
+            position: absolute;
+        }
+        
+        #menu:checked~.header nav {
+            left: 0;
+        }
+        
+        .header .h3 .a {
+            text-align: center;
+        }
+        
+        .bg img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        @media screen and (min-width:768px) {
+            .btn {
+                display: none;
+            }
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav {
+                position: relative;
+                left: 0;
+                display: flex;
+                width: auto;
+                height: auto;
+                top: 0;
+                background-color: transparent;
+            }
+            nav a {
+                border-bottom: none;
+            }
+            .header .h3 .a {
+                text-align: center;
+            }
+        }
+        
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background-color: #ccc;
+            background: linear-gradient(110deg, #7bf 45%, transparent 45%) center center / 100% 100%, url("C://Users/88691/desktop/B10756016/影子.jpg")right center / auto 100%;
+        }
+        
+        .container {
+            height: 100%;
+            width: 1200px;
+            margin: auto;
+        }
+        
+        .banner-txt {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        
+        .banner-txt h1 {
+            font-size: 50px;
+            border-bottom: 1px solid #333;
+            font-weight: 900;
+            padding-bottom: 0.4em;
+            margin-bottom: 0.4em;
+        }
+        
+        .banner-txt p {
+            font-size: 18px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" name="" id="menu">
+
+    <div class="header">
+        <h3 class="logo">
+            <a href="首頁1.html">Hi! I am green tea!
+        </h1>
+        <label for="menu" class="btn"> 
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="首頁1.html">welcome</a>
+            <a href="introduction myself.html">introduction myself</a>
+            </nav>
+    </div>
+    <div class="banner">
+        <div class="container">
+            <div class="banner-txt">
+                <h1>Welcome to my life</h1>
+                <p>內有許多美食，請慎入!!!
+                    <br> 記錄自己生活中喜歡的人事物以及平凡大學生的小小日常❤️
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

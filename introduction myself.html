@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .bg img {
+            width: 100%;
+            height: 30%;
+        }
+        
+        img {
+            vertical-align: bottom;
+        }
+        
+        .item-group {
+            width: 100%;
+            max-width: 1400px;
+            margin: auto;
+        }
+        
+        .footer {
+            background-color: bisque;
+            color: black;
+            text-align: left;
+            padding: 40px 0;
+            font-size: 30px;
+            font-style: oblique;
+            font-display: unset;
+        }
+        
+        .title h2 {
+            text-align: center;
+            font-size: 46px;
+        }
+        
+        .title {
+            margin: 0 0px 10px;
+            padding: 20px 10px;
+            background-color: aquamarine;
+        }
+        
+        .title p {
+            font-size: 22px;
+            text-align: center;
+        }
+        
+        .item {
+            margin: 0 10px 20px;
+        }
+        
+        .item .text h3 {
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        .item .pic img {
+            width: 100%;
+        }
+        
+        .ph img {
+            width: 60px;
+        }
+        
+        .two {
+            margin: 60px 0;
+            background-color: beige;
+        }
+        
+        .s1 .item .text {
+            background-color: beige;
+        }
+        
+        .header {
+            height: 30px;
+            background-color: aqua;
+            position: relative;
+        }
+        
+        .btn {
+            width: 40px;
+            height: 40px;
+            background-color: aquamarine;
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+        
+        .btn span {
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+            display: block;
+            overflow: hidden;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            left: 2px;
+            width: 36px;
+            background-color: bisque;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 0px 0px 0px #aaa, 0px -8px 0px #aaa;
+        }
+        
+        nav {
+            width: 40%;
+            height: 100vh;
+            background-color: #282923;
+            position: absolute;
+            top: 50px;
+            left: -100%;
+        }
+        
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: #a6e22e;
+            padding: 10px 20px;
+            border-bottom: 1px solid #a6e22e;
+        }
+        
+        #menu {
+            position: absolute;
+        }
+        
+        #menu:checked~.header nav {
+            left: 0;
+        }
+        
+        .s1 .item .text h3 {
+            font-weight: 900;
+            font-style: oblique;
+        }
+        
+        .header .h3 .a {
+            text-align: center;
+        }
+        
+        @media screen and (min-width:768px) {
+            .btn {
+                display: none;
+            }
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav {
+                position: relative;
+                left: 0;
+                display: flex;
+                width: auto;
+                height: auto;
+                top: 0;
+                background-color: transparent;
+            }
+            nav a {
+                border-bottom: none;
+            }
+        }
+        
+        @media screen and (min-width:768px) {
+            .item-group {
+                display: flex;
+            }
+            .s1 .item {
+                display: flex;
+            }
+            .s1 .item .pic {
+                width: 30%;
+                margin: 0;
+            }
+            .s1 .item .text {
+                width: 70%;
+                margin: 0;
+            }
+            .s1 .item .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" name="" id="menu">
+
+    <div class="header">
+        <h1 class="logo">
+            <a href="首頁1.html">Hi! I am green tea!
+        </h1>
+        <label for="menu" class="btn"> 
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="首頁1.html">welcome</a>
+            <a href="introduction myself.html">introduction myself</a>
+            </nav>
+    </div>
+
+    <div class="bg">
+        <img src="https://picsum.photos/1400/300?random=2">
+    </div>
+
+    </div>
+    <div class="s1">
+        <div class="wrap">
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic">
+                        <img src="C://Users/88691/desktop/B10756016/專題展.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>敗，不是錯誤，是失誤;錯，不是錯過，是嘗試; 錯，不是結果，是過程
+                            <p>若無沆瀣一氣的決心，就別談萬無一失的成功</p>
+                        </h3>
+                        <br>
+                        <p>我是碞濚，一個非常典型的天秤座，做事非常容易猶豫不決， 很容易出現選擇障礙，每到晚餐時刻總是選擇不出我的晚餐，永遠都是朋友幫我做決定。自幼生長在超具權威的環境，沒有太多屬於自己的娛樂，但卻樸實而無華，每天簡簡單單的與長輩聊聊天，散散步，簡單卻充實，生活在新北市生活腳步極為快速的都市，在忙碌的生活中，就只能用instagram記錄自己的生活，每天日出而作，日落而息，在台北便正常不過了，而我也喜歡運用空檔之餘，到社區的健身房進行慢跑，來鍛鍊自己的身材，在運動之餘也喜歡聆聽一些翻唱歌曲，練習歌唱，來提升自己唱歌的水平，也讓我有屬於自己的娛樂及休閒。</p>
+                        <br>
+                        <p>而我目前就讀屏東科技大學資訊管理系大二，除了修讀系上專業科目外，也修了許多外系學分，為了讓未來有更多的時間可以運用，所以我選擇把自己的課表塞滿，外來我想成為程式工程師且兼顧完整的管理之能，雖然在鍛鍊自己的過程中會有多次的失敗，但那並不是最終的結果，沒有錯誤的過程就沒有改進的方針，若連努力都沒女利過就別妄想自己會成功，雖然努力跟結果不一釘成正比，但期望自己能夠啂力的朝自己所設立的目標前進，唯有向前看才會有前進的動力，把每次的挫敗當作成功的墊腳石，院之後的自己可以更好。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item-group">
+
+
+        <div class="item">
+            <div class="pic">
+                <img src="C://Users/88691/desktop/B10756016/神山.jpg">
+            </div>
+            <div class="text">
+                <h3>眺望神山</h3>
+            </div>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="C://Users/88691/desktop/B10756016/帥哥.jpg">
+            </div>
+            <div class="text">
+                <h3>帥氣的背殺❤️</h3>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="footer">
+        <div class="ph">
+            <a href="https://www.instagram.com/green_tea_09_28/"> <img src="C://Users/88691/desktop/B10756016/ig.jfif"></a>ig搜尋:green_tea_09_28
+        </div>
+        <div class="ph">
+            <a href="https://www.facebook.com/yanrongc3"><img src="C://Users/88691/desktop/B10756016/fb.png"></a> fb搜尋:陳碞濚
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
